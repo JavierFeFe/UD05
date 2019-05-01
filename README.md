@@ -42,7 +42,6 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
 </html>
 ```  
 * RESULTADO: *
-´´´HTML
 <html>
   <body>
     <table  border="1">
@@ -81,6 +80,5 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
     </table>
   </body>
 </html>
-´´´
 ![image](https://user-images.githubusercontent.com/44543081/57030573-7439d080-6c45-11e9-923c-1ff2ff0effde.png)
 
