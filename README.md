@@ -40,6 +40,47 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
     </table>
   </body>
 </html>
-```
+```  
+* RESULTADO: *
+´´´HTML
+<html>
+  <body>
+    <table  border="1">
+      <tr>
+        <td>Nome</td>
+        <td>Apelidos</td>
+        <td>Tarefas</td>
+        <td>Cuestionarios</td>
+        <td>Examen</td>
+        <td>Final</td>
+        <tr>
+          <td>Jose</td>
+          <td>Muñoz Soto</td>
+          <td>9.0</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>NOTABLE</td>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>Martinez de la Fuente</td>
+          <td>9.0</td>
+          <td>8.0</td>
+          <td>9.0</td>
+          <td>NOTABLE</td>
+        </tr>
+        <tr>
+          <td>Esther</td>
+          <td>Pereda</td>
+          <td>3.0</td>
+          <td>2.0</td>
+          <td>2.0</td>
+          <td>INSUFICIENTE</td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>
+´´´
 ![image](https://user-images.githubusercontent.com/44543081/57030573-7439d080-6c45-11e9-923c-1ff2ff0effde.png)
 
