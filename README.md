@@ -15,12 +15,16 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
   <body>
     <table border="1">
       <tr>
-        <td>Nome</td>
-        <td>Apelidos</td>
-        <td>Tarefas</td>
-        <td>Cuestionarios</td>
-        <td>Examen</td>
-        <td>Final</td>
+         <tr>
+          <th colspan="3">Datos</th>
+          <th colspan="3">Notas</th>
+        </tr>
+        <th>Nome</th>
+        <th>Apelidos</th>
+        <th>Tarefas</th>
+        <th>Cuestionarios</th>
+        <th>Examen</th>
+        <th>Final</th>
         {
         for $alumno in db:open("LMSGI05_TARE_R01")/notas/alumno
           where $alumno/@convocatoria = 'Junio'
@@ -41,18 +45,22 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
   </body>
 </html>
 ```  
-* RESULTADO: *
+Resultado:
 ```HTML
 <html>
   <body>
-    <table  border="1">
+    <table border="1">
       <tr>
-        <td>Nome</td>
-        <td>Apelidos</td>
-        <td>Tarefas</td>
-        <td>Cuestionarios</td>
-        <td>Examen</td>
-        <td>Final</td>
+        <tr>
+          <th colspan="3">Datos</th>
+          <th colspan="3">Notas</th>
+        </tr>
+        <th>Nome</th>
+        <th>Apelidos</th>
+        <th>Tarefas</th>
+        <th>Cuestionarios</th>
+        <th>Examen</th>
+        <th>Final</th>
         <tr>
           <td>Jose</td>
           <td>Muñoz Soto</td>
@@ -82,5 +90,4 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
   </body>
 </html>
 ```
-![image](https://user-images.githubusercontent.com/44543081/57030573-7439d080-6c45-11e9-923c-1ff2ff0effde.png)
 
