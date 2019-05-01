@@ -10,7 +10,7 @@ A nota final debe estar en letra; é dicir, se é maior ou igual a 9 será SOBRE
 
 Só se deben mostrar os datos correspondentes á convocatoria de xuño.
 
-´´´Xquery
+```Xquery
 <html>
   <body>
     <table border="1">
@@ -40,4 +40,4 @@ Só se deben mostrar os datos correspondentes á convocatoria de xuño.
     </table>
   </body>
 </html>
-´´´´
+```
