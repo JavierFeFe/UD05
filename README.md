@@ -78,60 +78,60 @@ XSLT:
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 	<xsl:template match="/">
 		<html>
-			 <body>
-			    <table border="1">
-			    	<tr>
-				         <tr>
-					          <th colspan="3">Datos</th>
-					          <th colspan="3">Notas</th>
-				    	</tr>
-				        <th>Nome</th>
-				        <th>Apelidos</th>
-				        <th>Tarefas</th>
-				        <th>Cuestionarios</th>
-				        <th>Examen</th>
-				        <th>Final</th>
-				        <xsl:for-each select="notas/alumno[@convocatoria='Junio']">
-				        	<tr>
-				        		<td>
-				        			<xsl:value-of select="nombre"/>
-				        		</td>
-				        		<td>
-				        			<xsl:value-of select="apellidos"/>
-				        		</td>
-				        		<td>
-				        			<xsl:value-of select="tareas"/>
-				        		</td>
-				        		<td>
-				        			<xsl:value-of select="cuestionarios"/>
-				        		</td>
-				        		<td>
-				        			<xsl:value-of select="examen"/>
-				        		</td>
-				        		<td>
-				        			<xsl:variable name="notaFinal" select="final"/>
-				        			<xsl:choose>
-								     <xsl:when test="$notaFinal &lt; 5.0">
-								       INSUFICIENTE
-								     </xsl:when>
-								     <xsl:when test="$notaFinal &lt; 6.0">
-								       SUFICIENTE
-								     </xsl:when>
-								     <xsl:when test="$notaFinal &lt; 7.0">
-								       BIEN
-								     </xsl:when>
-								     <xsl:when test="$notaFinal &lt; 9.0">
-								       NOTABLE
-								     </xsl:when>
-								     <xsl:otherwise>
-								      	SOBRESALIENTE
-								     </xsl:otherwise>
-								   </xsl:choose>
-				        		</td>
-				        	</tr>
-				        </xsl:for-each>
-			    </tr>
-			</table>
+			<body>
+				<table border="1">
+					<tr>
+						<tr>
+							<th colspan="3">Datos</th>
+							<th colspan="3">Notas</th>
+						</tr>
+						<th>Nome</th>
+						<th>Apelidos</th>
+						<th>Tarefas</th>
+						<th>Cuestionarios</th>
+						<th>Examen</th>
+						<th>Final</th>
+						<xsl:for-each select="notas/alumno[@convocatoria='Junio']">
+							<tr>
+								<td>
+									<xsl:value-of select="nombre"/>
+								</td>
+								<td>
+									<xsl:value-of select="apellidos"/>
+								</td>
+								<td>
+									<xsl:value-of select="tareas"/>
+								</td>
+								<td>
+									<xsl:value-of select="cuestionarios"/>
+								</td>
+								<td>
+									<xsl:value-of select="examen"/>
+								</td>
+								<td>
+									<xsl:variable name="notaFinal" select="final"/>
+									<xsl:choose>
+										<xsl:when test="$notaFinal &lt; 5.0">
+											INSUFICIENTE
+										</xsl:when>
+										<xsl:when test="$notaFinal &lt; 6.0">
+											SUFICIENTE
+										</xsl:when>
+										<xsl:when test="$notaFinal &lt; 7.0">
+											BIEN
+										</xsl:when>
+										<xsl:when test="$notaFinal &lt; 9.0">
+											NOTABLE
+										</xsl:when>
+										<xsl:otherwise>
+											SOBRESALIENTE
+										</xsl:otherwise>
+									</xsl:choose>
+								</td>
+							</tr>
+						</xsl:for-each>
+					</tr>
+				</table>
 			</body>
 		</html>
 	</xsl:template>
